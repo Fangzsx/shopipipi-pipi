@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_item_food"
+        android:title="food"
+        android:icon="@drawable/ic_cutlery"
+        app:showAsAction="ifRoom"/>
+    <item
+    android:id="@+id/nav_item_beverage"
+    android:title="beverage"
+    android:icon="@drawable/ic_beverage"
+    app:showAsAction="always"/>
+
+    <item
+    android:id="@+id/nav_item_desert"
+    android:title="dessert"
+    android:icon="@drawable/ic_dessert"
+    app:showAsAction="always"/>
+
+
+</menu>
