@@ -3,8 +3,10 @@ package com.fangs.shopipipi_pipi
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import android.view.View
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.appcompat.widget.Toolbar
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -17,7 +19,9 @@ class MainActivity : AppCompatActivity() {
 
 
         val navBottom = findViewById<BottomNavigationView>(R.id.nav_bottom_bar)
+        val topToolbar = findViewById<Toolbar>(R.id.tb_top_bar)
 
+        setSupportActionBar(topToolbar)
         navBottom.setOnItemSelectedListener { item ->
             when(item.itemId){
                 R.id.nav_item_food ->{
@@ -39,5 +43,11 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        super.onCreateOptionsMenu(menu)
+        menuInflater.inflate(R.menu.menu_top_nav, menu)
+        return true
     }
 }
