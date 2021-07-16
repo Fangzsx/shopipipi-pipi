@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dl_menu_drawer"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    tools:openDrawer="start"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -63,12 +65,12 @@
             android:background="@color/design_default_color_primary_dark"
             app:itemTextColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"/>
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-
-
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nv_top_bar_nav"
+        android:layout_width="wrap_content"
+        android:layout_gravity="start"
+        android:layout_height="match_parent"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>
