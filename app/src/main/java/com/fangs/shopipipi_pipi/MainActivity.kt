@@ -40,14 +40,4 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-
-    override fun onWindowFocusChanged(hasFocus: Boolean) {
-        super.onWindowFocusChanged(hasFocus)
-        @Suppress("DEPRECATION")
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            window.setDecorFitsSystemWindows(false)
-        } else {
-            window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
-        }
-    }
 }
