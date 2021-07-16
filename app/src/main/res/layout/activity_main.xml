@@ -71,6 +71,7 @@
         android:id="@+id/nv_top_bar_nav"
         android:layout_width="wrap_content"
         android:layout_gravity="start"
+        app:menu="@menu/menu_top_bar_nav"
         android:layout_height="match_parent"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>

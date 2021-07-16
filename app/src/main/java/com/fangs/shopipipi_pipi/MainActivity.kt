@@ -13,6 +13,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,6 +30,9 @@ class MainActivity : AppCompatActivity() {
 
         //drawer
         val menuDrawer = findViewById<DrawerLayout>(R.id.dl_menu_drawer)
+        //navigation view
+        val menuNavigationView = findViewById<NavigationView>(R.id.nv_top_bar_nav)
+        menuNavigationView.itemIconTintList = null
 
 
         //open drawer on menu image clock
