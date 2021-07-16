@@ -9,8 +9,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-        application.setTheme(R.style.AppTheme)
-
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
