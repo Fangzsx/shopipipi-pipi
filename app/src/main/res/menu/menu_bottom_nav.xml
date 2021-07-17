@@ -7,16 +7,16 @@
         android:icon="@drawable/ic_cutlery"
         app:showAsAction="ifRoom"/>
     <item
-    android:id="@+id/nav_item_beverage"
-    android:title="beverage"
-    android:icon="@drawable/ic_beverage"
-    app:showAsAction="always"/>
+        android:id="@+id/nav_item_beverage"
+        android:title="beverage"
+        android:icon="@drawable/ic_beverage"
+        app:showAsAction="always"/>
 
     <item
-    android:id="@+id/nav_item_desert"
-    android:title="dessert"
-    android:icon="@drawable/ic_dessert"
-    app:showAsAction="always"/>
+        android:id="@+id/nav_item_desert"
+        android:title="dessert"
+        android:icon="@drawable/ic_dessert"
+        app:showAsAction="always"/>
 
 
 </menu>

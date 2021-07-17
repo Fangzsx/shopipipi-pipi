@@ -3,4 +3,6 @@
     <string name="profile">Profile</string>
     <string name="your_cart">Your Cart</string>
     <string name="sign_out">Sign-out</string>
+    <string name="about_me">About Me</string>
+    <string name="help">help</string>
 </resources>

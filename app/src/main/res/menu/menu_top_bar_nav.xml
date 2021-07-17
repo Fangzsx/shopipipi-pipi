@@ -4,12 +4,11 @@
     <item android:id="@+id/iv_profile"
         android:title="@string/profile"
         android:icon="@drawable/user"/>
+
     <item android:id="@+id/iv_cart"
         android:title="@string/your_cart"
         android:icon="@drawable/trolley"/>
-    <item android:id="@+id/iv_sign_out"
-        android:title="@string/sign_out"
-        android:icon="@drawable/logout"/>
+
 
 
 </menu>

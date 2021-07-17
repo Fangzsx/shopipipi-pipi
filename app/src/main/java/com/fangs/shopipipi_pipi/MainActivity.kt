@@ -1,21 +1,22 @@
 package com.fangs.shopipipi_pipi
 
-import android.os.Build
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
-import android.view.Menu
 import android.view.View
 import android.widget.ImageView
 import android.widget.LinearLayout
+import android.widget.PopupMenu
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
+    @SuppressLint("NewApi")
     override fun onCreate(savedInstanceState: Bundle?) {
 
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
@@ -37,11 +38,8 @@ class MainActivity : AppCompatActivity() {
 
         //open drawer on menu image clock
         ivMenuTopBar.setOnClickListener {
-
         menuDrawer.openDrawer(GravityCompat.START)
-
         }
-
 
         navBottom.setOnItemSelectedListener { item ->
             when(item.itemId){
@@ -66,6 +64,17 @@ class MainActivity : AppCompatActivity() {
 
 
         }
+
+        val ivTopBulletMenu = findViewById<ImageView>(R.id.iv_top_bar_more_vertical)
+        ivTopBulletMenu.setOnClickListener {
+            val popUp = PopupMenu(this, topToolbar)
+            popUp.gravity = Gravity.RIGHT
+            popUp.menuInflater.inflate(R.menu.menu_top_bullet, popUp.menu)
+            popUp.show()
+        }
+
+
+
 
     }
 
