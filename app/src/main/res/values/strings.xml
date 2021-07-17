@@ -5,4 +5,5 @@
     <string name="sign_out">Sign-out</string>
     <string name="about_me">About Me</string>
     <string name="help">help</string>
+    <string name="log_out">Log out</string>
 </resources>
