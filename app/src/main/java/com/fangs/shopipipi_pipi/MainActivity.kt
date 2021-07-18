@@ -5,8 +5,6 @@ import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
-import android.view.View
-import android.view.Window
 import android.view.WindowManager
 import android.widget.*
 import androidx.appcompat.app.AppCompatDelegate
@@ -42,35 +40,30 @@ class MainActivity : AppCompatActivity() {
         menuDrawer.openDrawer(GravityCompat.START)
         }
 
-        //status bar
-        val window = window
-
-        // clear FLAG_TRANSLUCENT_STATUS flag:
-        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-
-        // add FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS flag to the window
-        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+//        //status bar
+//        val window = window
+//
+//        // clear FLAG_TRANSLUCENT_STATUS flag:
+//        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+//
+//        // add FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS flag to the window
+//        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
 
 
         navBottom.setOnItemSelectedListener { item ->
             when(item.itemId){
                 R.id.nav_item_food ->{
-                    navBottom.setBackgroundResource(R.color.gray)
-                    topToolbar.setBackgroundResource(R.color.gray)
-                    window.statusBarColor = ContextCompat.getColor(this,R.color.gray);
-
+                    Toast.makeText(this, "food clicked", Toast.LENGTH_SHORT).show()
                     true
                 }
                 R.id.nav_item_beverage ->{
-                    navBottom.setBackgroundResource(R.color.red)
-                    topToolbar.setBackgroundResource(R.color.red)
-                    window.statusBarColor = ContextCompat.getColor(this,R.color.red);
+                    Toast.makeText(this, "beverage clicked", Toast.LENGTH_SHORT).show()
+
                     true
                 }
                 R.id.nav_item_desert ->{
-                    navBottom.setBackgroundResource(R.color.yellow)
-                    topToolbar.setBackgroundResource(R.color.yellow)
-                    window.statusBarColor = ContextCompat.getColor(this,R.color.yellow);
+                    Toast.makeText(this, "desert clicked", Toast.LENGTH_SHORT).show()
+
                     true
                 }
 
