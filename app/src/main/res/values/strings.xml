@@ -7,5 +7,6 @@
     <string name="help">help</string>
     <string name="log_out">Log out</string>
     <string name="my_profile">my profile</string>
-    <string name="hi_i_am_jay_gilbert_garzon_a_third_year_bscs_student">I\'M JAY GARZON</string>
+    <string name="hi_i_am_jay_gilbert_garzon_a_third_year_bscs_student">I\'M JAY GARZON\n</string>
+    <string name="i_m_an_aspiring_mobile_developer_nyou_can_visit_my_other_works_at_n_nhttps_github_com_fangzsx">I\'m an aspiring Mobile Developer\nYou can visit my other works at \n\nhttps://github.com/Fangzsx</string>
 </resources>

@@ -1,16 +1,14 @@
 package com.fangs.shopipipi_pipi
 
 import android.annotation.SuppressLint
+import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
 import android.view.View
 import android.view.Window
 import android.view.WindowManager
-import android.widget.ImageView
-import android.widget.LinearLayout
-import android.widget.PopupMenu
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
@@ -87,6 +85,26 @@ class MainActivity : AppCompatActivity() {
             val popUp = PopupMenu(this, topToolbar)
             popUp.gravity = Gravity.RIGHT
             popUp.menuInflater.inflate(R.menu.menu_top_bullet, popUp.menu)
+
+
+            popUp.setOnMenuItemClickListener { item ->
+                when(item.itemId){
+                    R.id.item_about_me -> {
+
+                        val dialog = Dialog(this, R.style.Theme_dialog)
+                        dialog.setContentView(R.layout.dialog_about_me)
+
+                        val returnButton = dialog.findViewById<Button>(R.id.btn_about_me_return)
+                        returnButton.setOnClickListener {
+                            dialog.dismiss()
+                        }
+                        dialog.show()
+
+                        return@setOnMenuItemClickListener true
+                    }
+                    else -> return@setOnMenuItemClickListener false
+                }
+            }
             popUp.show()
         }
 
