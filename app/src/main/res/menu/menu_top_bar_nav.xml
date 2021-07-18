@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:id="@+id/iv_profile"
-        android:title="@string/profile"
-        android:icon="@drawable/user"/>
+    <group>
+        <item android:title="Welcome User!" >
+            <menu>
+                <item android:id="@+id/iv_profile"
+                    android:title="@string/profile"
+                    android:icon="@drawable/user"/>
 
-    <item android:id="@+id/iv_cart"
-        android:title="@string/your_cart"
-        android:icon="@drawable/trolley"/>
+                <item android:id="@+id/iv_cart"
+                    android:title="@string/your_cart"
+                    android:icon="@drawable/trolley"/>
+            </menu>
+        </item>
+    </group>
+
+
+
+
+
 
 
 
