@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:padding="25dp"
     android:background="@drawable/bg_dialog"
     android:layout_height="wrap_content">
@@ -13,29 +13,38 @@
         android:src="@drawable/my_image"
         android:background="@drawable/bg_my_image"
         android:contentDescription="@string/my_profile"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
+
+    <com.fangs.shopipipi_pipi.utils.SFCustomTextviewBold
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
         android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:text="@string/hi_i_am_jay_gilbert_garzon_a_third_year_bscs_student"/>
-    <TextView
-        android:layout_width="wrap_content"
+
+    <com.fangs.shopipipi_pipi.utils.SFCustomTextview
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/i_m_an_aspiring_mobile_developer_nyou_can_visit_my_other_works_at_n_nhttps_github_com_fangzsx"
         android:textSize="15sp"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:layout_gravity="center"/>
 
-    <Button
+
+    <com.fangs.shopipipi_pipi.SFCustomButtonText
         android:id="@+id/btn_about_me_return"
         android:layout_width="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
         android:layout_height="wrap_content"
+        android:textSize="15sp"
         android:text="Return"
         android:background="@drawable/bg_button"
         android:textColor="@color/white"
-        android:layout_marginTop="15dp"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"/>
 
 </LinearLayout>
