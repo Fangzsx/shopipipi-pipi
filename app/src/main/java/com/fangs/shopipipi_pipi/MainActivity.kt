@@ -5,10 +5,8 @@ import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
-import android.view.WindowManager
 import android.widget.*
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -84,7 +82,7 @@ class MainActivity : AppCompatActivity() {
                 when(item.itemId){
                     R.id.item_about_me -> {
 
-                        val dialog = Dialog(this, R.style.Theme_dialog)
+                        val dialog = Dialog(this, R.style.Theme_MyProfile)
                         dialog.setContentView(R.layout.dialog_about_me)
 
                         val returnButton = dialog.findViewById<Button>(R.id.btn_about_me_return)
