@@ -18,7 +18,7 @@ class SplashActivity : AppCompatActivity() {
         } else {
             window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
         }
-//test
+//test1
         @Suppress("DEPRECATION")
         Handler().postDelayed({
             val intent = Intent(this, MainActivity::class.java)
