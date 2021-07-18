@@ -3,18 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/nav_item_food"
-        android:title="food"
+        android:title="Food"
         android:icon="@drawable/ic_cutlery"
+
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/nav_item_beverage"
-        android:title="beverage"
+        android:title="Beverage"
         android:icon="@drawable/ic_beverage"
         app:showAsAction="always"/>
 
     <item
-        android:id="@+id/nav_item_desert"
-        android:title="dessert"
+        android:id="@+id/nav_item_dessert"
+        android:title="Dessert"
         android:icon="@drawable/ic_dessert"
         app:showAsAction="always"/>
 

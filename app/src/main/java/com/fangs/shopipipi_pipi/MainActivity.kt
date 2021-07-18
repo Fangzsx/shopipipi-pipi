@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
 
                     true
                 }
-                R.id.nav_item_desert ->{
+                R.id.nav_item_dessert ->{
                     Toast.makeText(this, "desert clicked", Toast.LENGTH_SHORT).show()
 
                     true
