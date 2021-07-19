@@ -73,9 +73,16 @@
         <com.fangs.shopipipi_pipi.utils.SFCustomEditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="USERNAME or Email ID"
+            android:hint="USERNAME or EMAIL ID"
             android:inputType="text"
-            android:layout_weight="0.75"/>
+            android:layout_weight="0.60"/>
+        <View
+            android:contentDescription="empty view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"/>
+
+
     </LinearLayout>
     <LinearLayout
         android:id="@+id/ll_password"
@@ -96,11 +103,22 @@
             android:textSize="20sp"
             android:textColor="@color/black"/>
         <com.fangs.shopipipi_pipi.utils.SFCustomEditText
+            android:id="@+id/et_password"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="PASSWORD"
-            android:inputType="text"
-            android:layout_weight="0.75"/>
+            android:inputType="textPassword"
+            android:tag="PASSWORD_HIDE"
+            android:layout_weight="0.60"/>
+
+        <ImageView
+            android:id="@+id/iv_password"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:src="@drawable/hide_password"
+
+            android:contentDescription="@string/app_name" />
     </LinearLayout>
 
 
