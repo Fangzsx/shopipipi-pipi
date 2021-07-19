@@ -1,4 +1,4 @@
-package com.fangs.shopipipi_pipi
+package com.fangs.shopipipi_pipi.utils
 
 import android.content.Context
 import android.graphics.Typeface

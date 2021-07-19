@@ -1,4 +1,4 @@
-package com.fangs.shopipipi_pipi
+package com.fangs.shopipipi_pipi.activities
 
 import android.content.Intent
 import android.os.Build
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.fangs.shopipipi_pipi.R
 
 class SplashActivity : AppCompatActivity() {
 

@@ -1,4 +1,4 @@
-package com.fangs.shopipipi_pipi
+package com.fangs.shopipipi_pipi.activities
 
 import android.annotation.SuppressLint
 import android.app.Dialog
@@ -9,6 +9,7 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import com.fangs.shopipipi_pipi.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
 

@@ -34,7 +34,7 @@
         android:layout_gravity="center"/>
 
 
-    <com.fangs.shopipipi_pipi.SFCustomButtonText
+    <com.fangs.shopipipi_pipi.utils.SFCustomButtonText
         android:id="@+id/btn_about_me_return"
         android:layout_width="wrap_content"
         android:paddingLeft="15dp"
