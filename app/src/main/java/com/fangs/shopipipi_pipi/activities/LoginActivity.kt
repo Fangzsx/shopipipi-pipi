@@ -19,26 +19,6 @@ class LoginActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        //set image for password icon && show password accordingly
-        val ivPassword = findViewById<ImageView>(R.id.iv_password)
-        val etPassword = findViewById<EditText>(R.id.et_password)
-
-
-        ivPassword.setOnClickListener {
-            if(etPassword.tag == "PASSWORD_SHOW"){
-                ivPassword.setImageResource(R.drawable.show_password)
-                etPassword.transformationMethod = PasswordTransformationMethod.getInstance()
-                //change tag
-                etPassword.tag = "PASSWORD_HIDE"
-            }else{
-                ivPassword.setImageResource(R.drawable.hide_password)
-                etPassword.transformationMethod = HideReturnsTransformationMethod.getInstance()
-                etPassword.tag = "PASSWORD_SHOW"
-            }
-        }
-
-
-
 
         //hide status bar
         @Suppress("DEPRECATION")
@@ -48,12 +28,5 @@ class LoginActivity : AppCompatActivity(){
             window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
         }
 
-        val btnLogin = findViewById<Button>(R.id.btn_login)
-
-        btnLogin.setOnClickListener {
-            Intent(this, MainActivity::class.java).also {
-                startActivity(it)
-            }
-        }
     }
 }
