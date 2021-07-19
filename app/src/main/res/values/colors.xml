@@ -10,5 +10,6 @@
 
     <color name="ThemePurple">#9e0059</color>
     <color name="ThemePink">#ff0054</color>
+    <color name="lightBlue">#173789</color>
 
 </resources>

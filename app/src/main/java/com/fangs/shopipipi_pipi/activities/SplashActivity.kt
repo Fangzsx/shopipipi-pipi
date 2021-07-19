@@ -19,10 +19,10 @@ class SplashActivity : AppCompatActivity() {
         } else {
             window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
         }
-//test1
+
         @Suppress("DEPRECATION")
         Handler().postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
         }, 2500) // 2500 is the delayed time in milliseconds.
