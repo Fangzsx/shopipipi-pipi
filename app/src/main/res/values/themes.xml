@@ -1,13 +1,14 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar" >
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar" >
         <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
         <item name="android:statusBarColor">@color/ThemePurple</item>
         <item name="android:itemBackground">@color/white</item>
         <item name="colorControlNormal">#c5c5c5</item>
         <item name="colorControlActivated">@color/ThemePurple</item>
         <item name="colorControlHighlight">@color/ThemePurple</item>
+        <item name="textInputStyle">@style/EditTextOutlined</item>
     </style>
 
     <style name="ToolBarStyle" parent="ThemeOverlay.AppCompat.Light">
@@ -26,5 +27,7 @@
     <style name="SF_font">
         <item name="fontFamily">@as/sf_regular</item>
     </style>
+
+    <style name="EditTextOutlined" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
 
 </resources>

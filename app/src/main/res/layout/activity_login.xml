@@ -132,6 +132,7 @@
             android:textSize="15sp"
             android:text="Doesn't have an account? "/>
         <com.fangs.shopipipi_pipi.utils.SFCustomTextviewBold
+            android:id="@+id/tv_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15sp"
