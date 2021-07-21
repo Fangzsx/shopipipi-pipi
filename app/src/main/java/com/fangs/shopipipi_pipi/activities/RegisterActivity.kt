@@ -7,7 +7,7 @@ import android.widget.TextView
 import android.widget.Toolbar
 import com.fangs.shopipipi_pipi.R
 
-class RegisterActivity : AppCompatActivity() {
+class RegisterActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
@@ -23,7 +23,7 @@ class RegisterActivity : AppCompatActivity() {
         setActionBar()
     }
 
-    fun setActionBar(){
+    private fun setActionBar(){
 
         val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.tb_top_registration)
 

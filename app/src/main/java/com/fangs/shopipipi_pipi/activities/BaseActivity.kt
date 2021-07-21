@@ -1,17 +1,11 @@
 package com.fangs.shopipipi_pipi.activities
 
 import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import androidx.core.content.ContextCompat
 import com.fangs.shopipipi_pipi.R
 import com.google.android.material.snackbar.Snackbar
 
-class BaseActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_base)
-
-    }
+open class BaseActivity : AppCompatActivity() {
 
 
     fun showErrorSnackBar(message : String , hasError : Boolean){
