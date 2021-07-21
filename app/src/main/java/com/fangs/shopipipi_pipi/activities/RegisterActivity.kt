@@ -20,7 +20,6 @@ class RegisterActivity : AppCompatActivity() {
             }
 
         }
-
         setActionBar()
     }
 
