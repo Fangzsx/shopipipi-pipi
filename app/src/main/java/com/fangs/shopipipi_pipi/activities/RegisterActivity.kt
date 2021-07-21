@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import android.widget.Toolbar
 import com.fangs.shopipipi_pipi.R
 
 class RegisterActivity : AppCompatActivity() {
@@ -19,5 +20,24 @@ class RegisterActivity : AppCompatActivity() {
             }
 
         }
+
+        setActionBar()
+    }
+
+    fun setActionBar(){
+
+        val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.tb_top_registration)
+
+        setSupportActionBar(toolbar)
+        val actionBar = supportActionBar
+        if(actionBar != null){
+            actionBar.setDisplayHomeAsUpEnabled(true)
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_back_button)
+        }
+
+        toolbar.setNavigationOnClickListener{
+            onBackPressed()
+        }
+
     }
 }

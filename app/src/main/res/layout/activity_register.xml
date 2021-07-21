@@ -10,37 +10,26 @@
     android:clipToPadding="false"
     tools:context=".activities.RegisterActivity">
 
-    <com.fangs.shopipipi_pipi.utils.SFCustomTextviewBold
-        android:id="@+id/tv_come_and_join_us"
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/tb_top_registration"
+        android:theme="@style/ThemeOverlay.MaterialComponents.ActionBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="Come and Join Us!"
-        android:textSize="30sp"
-        android:gravity="center"
-        android:textColor="@color/black"/>
+        android:layout_marginLeft="-10dp"
+        app:title="Come and Join Us!"
+        android:layout_marginRight="-10dp"/>
 
-    <com.fangs.shopipipi_pipi.utils.SFCustomTextviewBold
-        android:id="@+id/tv_authentication_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:text=" cannot be empty!"
-        android:layout_marginStart="-10dp"
-        android:layout_marginEnd="-10dp"
-        android:textColor="#FF0000"
-        android:textSize="15sp"/>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/tv_come_and_join_us"
-        app:layout_constraintBottom_toTopOf="@id/tv_authentication_text"
-        app:layout_constraintEnd_toStartOf="@id/tv_authentication_text"
+        app:layout_constraintTop_toBottomOf="@id/tb_top_registration"
         android:paddingTop="15sp"
-        app:layout_constraintStart_toEndOf="@id/tv_come_and_join_us">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tb_top_registration">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -161,8 +150,6 @@
                     android:text="I agree with the Terms and Services"/>
 
             </LinearLayout>
-
-
 
 
 
