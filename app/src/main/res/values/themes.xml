@@ -9,6 +9,8 @@
         <item name="colorControlActivated">@color/ThemePurple</item>
         <item name="colorControlHighlight">@color/ThemePurple</item>
         <item name="textInputStyle">@style/EditTextOutlined</item>
+        <item name="snackbarStyle">@style/SnackBarFullWidth</item>
+
     </style>
 
     <style name="ToolBarStyle" parent="ThemeOverlay.AppCompat.Light">
@@ -29,5 +31,6 @@
     </style>
 
     <style name="EditTextOutlined" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
+    <style name="SnackBarFullWidth"> parent="Widget.MaterialComponents.Snackbar.FullWidth"</style>
 
 </resources>
