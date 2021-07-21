@@ -15,12 +15,6 @@ class RegisterActivity : BaseActivity() {
 
         //initialize view
         val tvLogin = findViewById<TextView>(R.id.tv_login)
-        val etFullName = findViewById<TextInputEditText>(R.id.et_fullname)
-        val etEmail = findViewById<TextInputEditText>(R.id.et_email)
-        val etContactNumber = findViewById<TextInputEditText>(R.id.et_contact_number)
-        val etAddress = findViewById<TextInputEditText>(R.id.et_address)
-        val etPassword = findViewById<TextInputEditText>(R.id.et_password)
-        val etConfirmPassword = findViewById<TextInputEditText>(R.id.et_confirm_password)
 
         tvLogin.setOnClickListener {
             Intent(this, LoginActivity::class.java).also{
@@ -29,6 +23,11 @@ class RegisterActivity : BaseActivity() {
 
         }
         setActionBar()
+
+        //registration
+        btn_register.setOnClickListener {
+         validateCredentials()
+        }
     }
 
     private fun setActionBar(){
