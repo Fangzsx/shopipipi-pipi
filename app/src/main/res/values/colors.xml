@@ -11,5 +11,7 @@
     <color name="ThemePurple">#9e0059</color>
     <color name="ThemePink">#ff0054</color>
     <color name="lightBlue">#173789</color>
+    <color name="snackBarError">#DF2D21</color>
+    <color name="snackBarSuccess">#2FAC21</color>
 
 </resources>
