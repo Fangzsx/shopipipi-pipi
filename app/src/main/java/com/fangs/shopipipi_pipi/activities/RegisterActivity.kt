@@ -50,7 +50,38 @@ class RegisterActivity : BaseActivity() {
 
     private fun validateCredentials() : Boolean{
         return when{
-
+            TextUtils.isEmpty(et_fullname.text.toString().trim { it <= ' ' }) -> {
+                showErrorSnackBar("Name cannot be empty!", true)
+                false
+            }
+            TextUtils.isEmpty(et_email.text.toString().trim { it <= ' ' }) -> {
+                showErrorSnackBar("Email cannot be empty!", true)
+                false
+            }
+            TextUtils.isEmpty(et_contact_number.text.toString().trim { it <= ' ' }) -> {
+                showErrorSnackBar("Contact number cannot be empty!", true)
+                false
+            }
+            TextUtils.isEmpty(et_address.text.toString().trim { it <= ' ' }) -> {
+                showErrorSnackBar("Address cannot be empty!", true)
+                false
+            }
+            TextUtils.isEmpty(et_password.text.toString().trim { it <= ' ' }) -> {
+                showErrorSnackBar("Password cannot be empty!", true)
+                false
+            }
+            TextUtils.isEmpty(et_confirm_password.text.toString().trim { it <= ' ' }) -> {
+                showErrorSnackBar("Confirm cannot be empty!", true)
+                false
+            }
+            !cb_terms_and_services.isChecked -> {
+                showErrorSnackBar("You must agree with the Terms and Services", true)
+                false
+            }
+            else -> {
+                showErrorSnackBar("Registration Successful", false)
+                true
+            }
 
 
         }
