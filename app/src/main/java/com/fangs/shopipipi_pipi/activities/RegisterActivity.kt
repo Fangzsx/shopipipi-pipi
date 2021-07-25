@@ -5,7 +5,11 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.widget.TextView
 import com.fangs.shopipipi_pipi.R
+import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.material.textfield.TextInputEditText
+import com.google.firebase.auth.AuthResult
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import kotlinx.android.synthetic.main.activity_register.*
 
 class RegisterActivity : BaseActivity() {
@@ -26,7 +30,7 @@ class RegisterActivity : BaseActivity() {
 
         //registration
         btn_register.setOnClickListener {
-         validateCredentials()
+         registerUser()
         }
     }
 
@@ -44,7 +48,6 @@ class RegisterActivity : BaseActivity() {
         toolbar.setNavigationOnClickListener{
             onBackPressed()
         }
-
     }
 
     private fun validateCredentials() : Boolean{
@@ -78,11 +81,43 @@ class RegisterActivity : BaseActivity() {
                 false
             }
             else -> {
-                showErrorSnackBar("Registration Successful", false)
+                //showErrorSnackBar("Registration Successful", false)
                 true
             }
-
-
         }
     }
+
+
+
+    //for adding user to firebase
+    private fun registerUser(){
+
+        if(validateCredentials())
+        {
+            //check if the user's info are valid or not, remove white space
+            val email = et_email.text.toString().trim {it <= ' '}
+            val password = et_password.text.toString().trim {it <= ' '}
+
+
+            FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
+                .addOnCompleteListener(OnCompleteListener<AuthResult>
+                {
+                        task ->
+
+                    if(task.isSuccessful){
+
+                        val firebaseUser : FirebaseUser = task.result!!.user!!
+                        showErrorSnackBar("Registration Successful with ID ${firebaseUser.uid}", false)
+
+                    }else{
+                        showErrorSnackBar(task.exception!!.message.toString(), true)
+                    }
+                })
+        }
+
+
+
+
+    }
+
 }
