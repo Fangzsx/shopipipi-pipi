@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "630485204284",
+    "project_id": "shopipipi-pipi",
+    "storage_bucket": "shopipipi-pipi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630485204284:android:edeea2d4e6741f6b017239",
+        "android_client_info": {
+          "package_name": "com.fangs.shopipipi_pipi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630485204284-brfgh68jcdgtnds9m20a5i7769at64p4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmb-GT8NNpRUIiFo0tWHisaCwfueMo7-g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630485204284-brfgh68jcdgtnds9m20a5i7769at64p4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
